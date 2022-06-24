@@ -1,4 +1,4 @@
-const KEY_BD = '@empregostrabalhoo'
+const KEY_BD = '@empregostrabalho'
 
 let listaEmpresas = {
     ultimoCod : 0,
