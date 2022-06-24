@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+
+</head>
+<body page ='lista'>
+    <header class="header-index">
+        <h1 class="logo">Empregos que já estão Cadastrados</h1>
+    </header>
+    <nav class="menu-h">
+       <ul class="bl">
+          <li class="hor"> <a href="./index.html">Início</a></li>
+          <li class="hor"> <a href="./detalhes.html">Detalhes das Vagas</a></li>
+          <li class="hor"> <a href="./">Administração</a>
+           <ul class="bl">
+                   <li> <a href="./cadastro.html">Adicionar Vagas de        Fortaleza</a></li>
+                   <li> <a href="./cadastro.html">Adicionar Vagas de Maranguape</a></li>
+               </ul>
+            </li>
+       </ul>
+   </nav>
+   <h2 class="cadastro">Tabela com a lista de objetos cadastrados</h2>
+    <div id="listaRegistros">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>EMPRESA/ÓRGÃO</th>
+                <th>VAGA</th>
+                <th>TELEFONE</th>
+                <th>EMAIL</th>
+                <th>REGIÃO</th>
+                <th>EDITAR/APAGAR</th>
+            </tr>
+            <tbody id="listaEmpregos"></tbody>
+        </table>
+    
+        <button onclick="vizualizar('cadastro', true)">Cadastrar</button> 
+    </div>
+
+    <form id="cadastroRegistros">
+        <h2>Cadastro de Vagas</h2>
+        <label>
+           ID A SER EDITADO:
+           <input type="number" readonly id="id">
+        </label>
+        <label>
+           NOME DA EMPRESA:
+           <input type="txt" id="nomeEmpresa">
+        </label>
+        <label>
+           NOME DA VAGA:
+           <input type="text" id="nomeVaga">
+        </label>
+        <label>
+           TELEFONE:
+           <input type="tel" id="telefone">
+        </label>
+        <label>
+           EMAIL:
+           <input type="email" id="email">
+        </label>
+        <label>
+           REGIÃO:
+           <input type="text" id="regiao">
+        </label>
+        <div>
+            <button>Salvar</button>
+            <button onclick="vizualizar('lista')" class="cinza" type="button">Cancelar</button>
+        </div>
+    </form>
+    
+</body>
+</html>
